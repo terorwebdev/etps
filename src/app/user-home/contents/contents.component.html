@@ -1,0 +1,56 @@
+<mat-card class="my-card">
+    <mat-card-content style="height: 100%;">
+        <div style="height: 100%;">
+            <mat-card-content style="background-color: aliceblue;text-align: center;padding: 10px;">
+                <h3>Balance : RM 50.00</h3>
+                <h4>{{CurrentLocalTime | date : 'medium'}}</h4>
+            </mat-card-content>
+
+            <mat-action-list *ngFor="let details of ListUserDetails" style="padding: 10px;">
+                <button mat-list-item (click)="toView(details)" routerLink="/detail" style="background-color: aliceblue;border-style: solid;border-radius: 15px;border-color: purple;
+            color:black;">
+
+                    <h1 matLine flex="100"> 
+                        <b><u>{{details.location.area_name | uppercase}}</u></b>
+                    </h1>
+                    <h2 matLine flex="30">
+                        Plate Number : {{details.car_plat}}
+                    </h2>
+                    <p matLine flex="30">
+                        Time End : {{details.end_time | date:'shortTime'}}
+                    </p>
+
+                    <p matLine flex="30">
+                        Remaining Time : <countdown #timeleft
+                            [config]="{leftTime: getRemainingTime(details.end_time), format:'HH:mm:ss'}"></countdown>
+                    </p>
+
+                    <div *ngIf="((timeleft.left/1000)/60) >= 10" class="housekeeping-active housekeeping-menu">
+                        Active
+                    </div>
+
+                    <div *ngIf="(((timeleft.left/1000)/60) < 10) && (((timeleft.left/1000)/60) > 0)"
+                        class="housekeeping-active2 housekeeping-menu2 blink-border">
+                        Top Up
+                    </div>
+
+                    <div *ngIf="((timeleft.left/1000)/60) <= 0" class="housekeeping-active3 housekeeping-menu3">
+                        Not Active
+                    </div>
+
+
+                </button>
+            </mat-action-list>
+
+        </div>
+    </mat-card-content>
+
+    <div class="addbutton-toolbar">
+        <div class="mat-toolbar-row">
+            <span class="example-spacer"></span>
+            <button mat-button routerLink="/detail">
+                <mat-icon class="addbuttonSize" color="primary">add_circle</mat-icon>
+            </button>
+        </div>
+    </div>
+</mat-card>

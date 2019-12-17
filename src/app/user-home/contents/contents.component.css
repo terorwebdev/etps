@@ -1,0 +1,96 @@
+.example-icon {
+    padding: 0 14px;
+  }
+  
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+.addPosition{
+    position: absolute;
+    width : 100%;
+    bottom: 20px;
+}
+.addButton {
+    display: flex;
+}
+
+.addbutton-toolbar {
+  width : 100%;
+  bottom: 20px;
+  position: sticky;
+  position: -webkit-sticky;
+  z-index: 50;
+}
+
+.addbuttonSize{
+  transform: scale(2);
+}
+
+.housekeeping-active {
+  border-color: greenyellow;
+  border-style: solid;
+  color: black;
+}
+
+.housekeeping-menu {
+  height: 70%;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: greenyellow;
+}
+
+.housekeeping-active2 {
+  border-color: #ffa500;
+  border-style: solid;
+  color: black;
+}
+
+.housekeeping-menu2 {
+  height: 70%;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: yellowgreen;
+}
+
+.housekeeping-active3 {
+  border-color: grey;
+  border-style: solid;
+  color: black;
+}
+
+.housekeeping-menu3 {
+  height: 70%;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: grey;
+}
+
+@-webkit-keyframes blinker {
+	from {opacity: 1.0;}
+	to {opacity: 0.0;}
+}
+
+@-webkit-keyframes blinkerborder {
+	 50% { border-color: rgba(193,193,193,0.1); }
+}
+
+
+.blink-border{
+-webkit-animation: blinkerborder .5s step-end infinite alternate;
+}
+
+.blink{
+	text-decoration: blink;
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: 0.6s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:ease-in-out;
+	-webkit-animation-direction: alternate;
+}

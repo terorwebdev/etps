@@ -1,0 +1,108 @@
+<!--[disabled]=NewFormStatus-->
+<mat-toolbar color="primary">
+    <a mat-button><button mat-icon-button (click)="back()">
+            <mat-icon>arrow_back</mat-icon>
+        </button> </a>
+    <span>Parking Ticket</span>
+</mat-toolbar>
+
+<mat-card class="my-card" style="text-align: center;">
+    <mat-card-content style="background-color: aliceblue;padding: 5px;">
+        <h3>Balance : RM 50.00</h3>
+        <h4>{{CurrentLocalTime | date : 'medium'}}</h4>
+    </mat-card-content>
+    <mat-card-content *ngIf="NewFormStatus">
+        <form [formGroup]="selectedLocation" class="my-form">
+            <mat-form-field class="full-width">
+                <mat-select placeholder="Location" formControlName="LocationList" required>
+                    <mat-option>--</mat-option>
+                    <mat-option *ngFor="let location of LocationList" [value]="location">
+                        {{location.area_name | uppercase}}
+                    </mat-option>
+                </mat-select>
+                <mat-error *ngIf="!selectedLocation.value?.LocationList">Check GPS setting or select manually
+                </mat-error>
+                <mat-hint *ngIf="selectedLocation.value?.LocationList">Parking Rate : RM
+                    {{selectedLocation.value?.LocationList.parking_rate}} (Half Hour)</mat-hint>
+            </mat-form-field>
+        </form>
+    </mat-card-content>
+    <mat-card-content *ngIf="!NewFormStatus">
+        <form class="my-form">
+            <mat-form-field class="full-width" style="font-weight: bold;">
+                <mat-label>Location</mat-label>
+                <input matInput placeholder="Location" [disabled]="true"
+                    [value]="existedLocation.value?.LocationList.area_name">
+                    <mat-hint>Parking Rate : RM {{existedLocation.value?.LocationList.parking_rate}}
+                          (Half Hour)</mat-hint>
+            </mat-form-field>
+        </form>
+    </mat-card-content>
+    <mat-card-content *ngIf="NewFormStatus">
+        <form [formGroup]="selectedLocation" class="my-form">
+            <mat-form-field class="full-width">
+                <mat-label>Car Plate Number</mat-label>
+                <input matInput placeholder="Enter Car Plate Number" formControlName="CarPlat" #input
+                    [value]="input.value.toUpperCase()" required>
+                <mat-error *ngIf="!selectedLocation.value?.CarPlat">Plat number is a MUST to Enter</mat-error>
+                <mat-hint *ngIf="selectedLocation.value?.CarPlat">Key in without space</mat-hint>
+            </mat-form-field>
+        </form>
+    </mat-card-content>
+    <mat-card-content *ngIf="!NewFormStatus">
+        <form [formGroup]="selectedLocation" class="my-form">
+            <mat-form-field class="full-width" style="font-weight: bold;">
+                <mat-label>Car Plate Number</mat-label>
+                <input matInput placeholder="Enter Car Plate Number" formControlName="CarPlat" #input
+                    [value]="input.value.toUpperCase()" required>
+            </mat-form-field>
+        </form>
+    </mat-card-content>
+    <mat-card-content>
+        <form [formGroup]="selectedLocation" class="my-form">
+            <mat-form-field class="full-width">
+                <mat-label>Parking Number</mat-label>
+                <input matInput placeholder="Parking Number" formControlName="ParkingNo" #input1
+                    [value]="input1.value.toUpperCase()">
+            </mat-form-field>
+        </form>
+    </mat-card-content>
+    <mat-card-content>
+        <h4>
+            <p>Set Parking Time</p>
+        </h4>
+
+        <table align="center">
+            <tr>
+                <th width="20%">
+                    <button mat-icon-button>
+                        <mat-icon class="addbuttonSize" (click)="toggleMinusHour()" color="primary">remove_circle
+                        </mat-icon>
+                    </button>
+                </th>
+                <th width="20%" style="font-size: 30px;">{{currentHourInfo.text1}}</th>
+                <th>:</th>
+                <th width="20%" style="font-size: 30px;">{{currentHourInfo.text2}}</th>
+                <th width="20%">
+                    <button mat-icon-button>
+                        <mat-icon class="addbuttonSize" (click)="toggleAddHour()" color="primary">add_circle</mat-icon>
+                    </button>
+                </th>
+            </tr>
+        </table>
+        <!--
+        <p *ngIf="NewFormStatus"> Remaining Time : <countdown [config]="{leftTime: ActiveRemainingTimer, format:'HH:mm:ss'}"></countdown>
+        </p>
+        -->
+
+        <p>You set <b>{{currentHourInfo.text1}}</b> hour <b>{{currentHourInfo.text2}}</b> minutes estimated time end
+        <b>{{EndTime | date : 'hh:mm a'}}</b></p>
+
+        <mat-card-actions>
+            <button mat-raised-button (click)="onSend()" color="primary">SEND</button>
+        </mat-card-actions>
+    </mat-card-content>
+</mat-card>
+
+
+<!--border:3px solid #424242;-->

@@ -1,0 +1,252 @@
+[
+ {
+    "id": 0,
+    "area_name": "Dewan Bandaraya Kota Kinabalu",
+    "area_name_abbr": "DBKK",
+    "district": "Kota Kinabalu",
+    "postcode": 88000,
+    "parking_rate": 0.25,
+    "noted": "parking rate 0.25 half hour",
+    "key":10000
+  },
+  {
+    "id": 1,
+    "area_name": "Majlis Perbandaran Sandakan",
+    "area_name_abbr": "MPSNDKN",
+    "district": "Sandakan",
+    "postcode": 90702,
+    "parking_rate": 0.25,
+    "noted": "parking rate 0.25 half hour",
+    "key":10001
+  },
+  {
+    "id": 2,
+    "area_name": "Majlis Perbandaran Tawau",
+    "area_name_abbr": "MPTAWAU",
+    "district": "Tawau",
+    "postcode": 91007,
+    "parking_rate": 0.25,
+    "noted": "parking rate 0.25 half hour",
+    "key":10002
+  },
+  {
+    "id": 3,
+    "area_name": "Majlis Daerah Penampang",
+    "area_name_abbr": "MDPPG",
+    "district": "Penampang",
+    "postcode": 89500,
+    "parking_rate": 0.25,
+    "noted": "parking rate 0.25 half hour",
+    "key":10003
+  },
+  {
+    "id": 4,
+    "area_name": "Majlis Daerah Putatan",
+    "area_name_abbr": "MDPUTATAN",
+    "district": "Putatan",
+    "postcode": 88200,
+    "parking_rate": 0.25,
+    "noted": "parking rate 0.25 half hour",
+    "key":10004
+  },
+  {
+    "id": 5,
+    "area_name": "Majlis Daerah Beaufort",
+    "area_name_abbr": "MDBEAUFORT",
+    "district": "Beaufort",
+    "postcode": 89808,
+    "parking_rate": 0.25,
+    "noted": "parking rate 0.25 half hour",
+    "key":10005
+  },
+  {
+    "id": 6,
+    "area_name": "Majlis Daerah Beluran",
+    "area_name_abbr": "MDBELURAN",
+    "district": "Beluran",
+    "postcode": 90107,
+    "parking_rate": 0.25,
+    "noted": "parking rate 0.25 half hour",
+    "key":10006
+  },
+  {
+    "id": 7,
+    "area_name": "Majlis Daerah Keningau",
+    "area_name_abbr": "MDKENINGAU",
+    "district": "Keningau",
+    "postcode": 89008,
+    "parking_rate": 0.25,
+    "noted": "parking rate 0.25 half hour",
+    "key":10007
+  },
+  {
+    "id": 8,
+    "area_name": "Majlis Daerah Kinabatangan",
+    "area_name_abbr": "MDKBTGN",
+    "district": "Kinabatangan",
+    "postcode": 90200,
+    "parking_rate": 0.25,
+    "noted": "parking rate 0.25 half hour",
+    "key":10008
+  },
+  {
+    "id": 9,
+    "area_name": "Majlis Daerah Kota Belud",
+    "area_name_abbr": "MDKB",
+    "district": "Kota Belud",
+    "postcode": 89157,
+    "parking_rate": 0.25,
+    "noted": "parking rate 0.25 half hour",
+    "key":10009
+  },
+  {
+    "id": 9,
+    "area_name": "Majlis Daerah Kota Marudu",
+    "area_name_abbr": "MDKM",
+    "district": "Kota Belud",
+    "postcode": 89100,
+    "parking_rate": 0.25,
+    "noted": "parking rate 0.25 half hour",
+    "key":10009
+  },
+  {
+    "id": 10,
+    "area_name": "Majlis Daerah Kuala Penyu",
+    "area_name_abbr": "MDKPENYU",
+    "district": "Kuala Penyu",
+    "postcode": 89740,
+    "parking_rate": 0.25,
+    "noted": "parking rate 0.25 half hour",
+    "key":10010
+  },
+  {
+    "id": 11,
+    "area_name": "Majlis Daerah Kunak",
+    "area_name_abbr": "MDKUNAK",
+    "district": "Kunak",
+    "postcode": 91207,
+    "parking_rate": 0.25,
+    "noted": "parking rate 0.25 half hour",
+    "key":10011
+  },
+  {
+    "id": 12,
+    "area_name": "Majlis Daerah Lahad Datu",
+    "area_name_abbr": "MDLD",
+    "district": "Lahad Datu",
+    "postcode": 91112 ,
+    "parking_rate": 0.25,
+    "noted": "parking rate 0.25 half hour",
+    "key":10012
+  },
+  {
+    "id": 13,
+    "area_name": "Majlis Daerah Nabawan",
+    "area_name_abbr": "MDN",
+    "district": "Nabawan",
+    "postcode": 89957,
+    "parking_rate": 0.25,
+    "noted": "parking rate 0.25 half hour",
+    "key":10013
+  },
+  {
+    "id": 14,
+    "area_name": "Majlis Daerah Papar",
+    "area_name_abbr": "MDPAPAR",
+    "district": "Papar",
+    "postcode": 89608,
+    "parking_rate": 0.25,
+    "noted": "parking rate 0.25 half hour",
+    "key":10014
+  },
+  {
+    "id": 15,
+    "area_name": "Majlis Daerah Ranau",
+    "area_name_abbr": "MDRANAU",
+    "district": "Ranau",
+    "postcode": 89308,
+    "parking_rate": 0.25,
+    "noted": "parking rate 0.25 half hour",
+    "key":10015
+  },
+  {
+    "id": 16,
+    "area_name": "Majlis Daerah Semporna",
+    "area_name_abbr": "MDS",
+    "district": "Semporna",
+    "postcode": 91308,
+    "parking_rate": 0.25,
+    "noted": "parking rate 0.25 half hour",
+    "key":10016
+  },
+  {
+    "id": 17,
+    "area_name": "Majlis Daerah Sipitang",
+    "area_name_abbr": "MDS",
+    "district": "Sipitang",
+    "postcode": 89857,
+    "parking_rate": 0.25,
+    "noted": "parking rate 0.25 half hour",
+    "key":10017
+  },
+  {
+    "id": 18,
+    "area_name": "Majlis Daerah Tambunan",
+    "area_name_abbr": "MDTAMBUNAN",
+    "district": "Tambunan",
+    "postcode": 89650,
+    "parking_rate": 0.25,
+    "noted": "parking rate 0.25 half hour",
+    "key":10018
+  },
+  {
+    "id": 19,
+    "area_name": "Majlis Daerah Tenom",
+    "area_name_abbr": "MDTENOM",
+    "district": "Tenom",
+    "postcode": 89907,
+    "parking_rate": 0.25,
+    "noted": "parking rate 0.25 half hour",
+    "key":10019
+  },
+  {
+    "id": 20,
+    "area_name": "Majlis Daerah Tuaran",
+    "area_name_abbr": "MDTUARAN",
+    "district": "Tuaran",
+    "postcode": 89208,
+    "parking_rate": 0.25,
+    "noted": "parking rate 0.25 half hour",
+    "key":10020
+  },
+  {
+    "id": 21,
+    "area_name": "Lembaga Bandaran Kudat",
+    "area_name_abbr": "LBK",
+    "district": "Kudat",
+    "postcode": 89057,
+    "parking_rate": 0.25,
+    "noted": "parking rate 0.25 half hour",
+    "key":10021
+  },
+  {
+    "id": 22,
+    "area_name": "Majlis Daerah Pitas",
+    "area_name_abbr": "MDPITAS",
+    "district": "Pitas",
+    "postcode": 89100,
+    "parking_rate": 0.25,
+    "noted": "parking rate 0.25 half hour",
+    "key":10022
+  },
+  {
+    "id": 23,
+    "area_name": "Majlis Daerah Tongod",
+    "area_name_abbr": "MDTONGOD",
+    "district": "Tongod",
+    "postcode": 89300,
+    "parking_rate": 0.25,
+    "noted": "parking rate 0.25 half hour",
+    "key":10023
+  }
+]

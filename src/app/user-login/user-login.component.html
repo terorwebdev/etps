@@ -1,0 +1,37 @@
+<div class="container">
+
+    <div class="item">
+        <mat-toolbar>
+            <span>LOGIN</span>
+        </mat-toolbar>
+
+        <mat-card class="my-card">
+
+            <mat-card-content>
+
+                <form class="my-form">
+
+                    <mat-form-field class="full-width">
+                        <mat-label>Username</mat-label>
+                        <input matInput placeholder="Username" name="username" required #username>
+                    </mat-form-field>
+
+                    <mat-form-field class="full-width">
+                        <mat-label>Password</mat-label>
+                        <input matInput type="password" placeholder="Password" name="password" required #password>
+                    </mat-form-field>
+
+                </form>
+
+            </mat-card-content>
+
+            <mat-card-actions>
+                <button mat-raised-button (click)="onClickSubmit(username.value, password.value)"
+                    color="primary">Login</button>
+                &nbsp;&nbsp;
+                <button mat-button routerLink="/register" color="primary">Register</button>
+            </mat-card-actions>
+
+        </mat-card>
+    </div>
+</div>
